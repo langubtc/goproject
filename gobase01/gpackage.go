@@ -1,4 +1,4 @@
-package main
+package main //二进制package 定义为main就可以，可执行
 
 import (
 	"fmt"
@@ -7,6 +7,7 @@ import (
 	//只执行btinit中的init函数
 	_ "goproject/gobase01/btinit"
 )
+
 //package 是最基本的分发单位和工程管理中依赖关系的体现
 //每个go源码文件开头都要拥有一个package声明，表示源码文件所属代码包
 //要生成可执行程序，必须要有一个main的package包，包下有main()函数
@@ -21,18 +22,15 @@ import (
 // 2. 使用.点来作为别名，如果以. 来导入该包，那就不需要使用包名+函数的方式，而是直接调用函数方法。不建议使用
 // 3. 下划线_ 表示导入该包，但不导入整个包，而是执行该包中的init函数，因此无法通过包名来调用包中的其它函数。
 
-
-func  main()  {
+func main() {
 	//导入必须是以GOPATH路径来定义 导入后就可以使用包下面的函数
-	var result = bt.Add(1,2)
-	var result2 = bt.Subtraction(1,2)
-	var result3 = bt.Division(1,2)
+	var result = bt.Add(1, 2)
+	var result2 = bt.Subtraction(1, 2)
+	var result3 = bt.Division(1, 2)
 
 	vHostName := bt.HostNmae()
-	fmt.Println(result,result2,result3)
+	fmt.Println(result, result2, result3)
 
-	fmt.Print("主机名:",vHostName)
+	fmt.Print("主机名:", vHostName)
 
 }
-
-

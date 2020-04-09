@@ -7,7 +7,7 @@ import (
 
 func Info() {
 
-	fmt.Println("这里是帮助信息!!!!!")
+	fmt.Printf("<<<<<帮助信息<<<<<\n1.start\t启动\n2.stop\t停止\n3.restart\t重启")
 
 }
 
