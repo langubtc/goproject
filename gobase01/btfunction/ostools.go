@@ -1,20 +1,20 @@
 package btfunction
 
+//必须大写字母开头
+func Add(a, b int) int {
 
-func Add(a,b int) int{
-
-	return a+b
+	return a + b
 }
 
-func Subtraction(a,b int) int {
+func Subtraction(a, b int) int {
 	return a - b
 }
 
-func multiplication(a,b int) int {
+func Multiplication(a, b int) int {
 
 	return a * b
 }
 
-func Division(a,b int) int {
+func Division(a, b int) int {
 	return a / b
 }
