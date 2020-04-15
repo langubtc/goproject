@@ -38,4 +38,7 @@ One:
 		}
 		fmt.Println("")
 	}
+
+	number := 2
+	fmt.Printf("%-2d", number)
 }
