@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	input_words := "one two two   three"
+	input_words := "one two   two   three two one  CCC KKK"
 	map_string := make(map[string]int)
 	//将字符串转成slice 并且以空格做区分
 	string_slice := strings.Fields(input_words)
@@ -18,7 +18,6 @@ func main() {
 		} else {
 			map_string[v] = 1
 		}
-
 	}
 
 	for k, v := range map_string {
