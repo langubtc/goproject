@@ -1,17 +1,16 @@
 package main
 
+import "fmt"
+
 type StringValue struct {
-	Key int
+	Key   int
 	Value int
 }
 
+func main() {
 
-func main()  {
-
-	strings := [{'a':1,'b':2},{'a':1,'b':2},{'a':1,'b':2}]
-
-
-
-
+	//
+	a := StringValue{1, 2}
+	fmt.Println(a)
 
 }
