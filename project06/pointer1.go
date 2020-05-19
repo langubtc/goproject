@@ -29,4 +29,10 @@ func main() {
 	mm["name"] = "lc"
 	fmt.Println(mm["name"], mm)
 
+	a := new(int)
+
+	*a = 2
+
+	fmt.Println(*a)
+
 }
